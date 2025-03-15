@@ -27,7 +27,7 @@ echo -e "${yellow}Enter saving path (Default: ${default_path}) ${reset}"
 
 #user se number se path input lein
 echo -e "${blue}Select saving path : ${reset}"
-echo -e "${yellow}[1] => /home/sanjla/Desktop/${reset}"
+echo -e "${yellow}[1] => /home/kali/Desktop/${reset}"
 echo -e "${yellow}[2] => /sdcard/Downloads/${reset}"
 read -p "Select saving path : " path
 # Agar user ne koi path nahi diya toh default path set karein
