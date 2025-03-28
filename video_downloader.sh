@@ -7,7 +7,9 @@ yellow="\e[1;33m"
 blue="\e[1;34m"
 cyan="\e[1;36m"
 reset="\e[1;0m"
-
+if ! command -v yt-dlp &> /dev/null;
+  pkg install yt-dlp -y
+fi
 # User se URL input lein
 echo -e "${cyan}Please enter the video URL: ${reset}"
 read -p "   " url
