@@ -7,13 +7,14 @@ yellow="\e[1;33m"
 blue="\e[1;34m"
 cyan="\e[1;36m"
 reset="\e[1;0m"
-if ! command -v yt-dlp &> /dev/null;
+if ! command -v yt-dlp &> /dev/null; then
   pkg install yt-dlp -y
+  sudo apt install yt-dlp -y
 fi
 # User se URL input lein
-echo -e "${cyan}Please enter the video URL: ${reset}"
-read -p "   " url
-
+printf "${cyan}\n"
+read -p "Please enter the video URL : " url
+printf "${reset}\n"
 # Default download path
 default_path="/sdcard/Downloads/"
 
