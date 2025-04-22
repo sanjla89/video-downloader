@@ -13,6 +13,6 @@ yt-dlp --yes-playlist \
 --playlist-start "$starting" \
 --playlist-end "$ending" \
 -f "bestvideo[height=${resulation}]+bestaudio[ext=m4a]" \
--o "/sdcard/Downloads/%(playlist)s/%(title)s.%(ext)s" \
+-o "/sdcard/Downloads/%(playlist)s/%(playlist_index) - %(title)s.%(ext)s" \
 "$playlist_url"
 
